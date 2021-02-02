@@ -1,22 +1,115 @@
 /* --- COMMON --- */
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 10px;
+  color: #212529;
+  line-height: 2em;
+  text-align: center;
 }
-
+    /* --TIPOGRAFIA-- */
+h1{
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+}
+h1:not(:only-child, :last-child),
+h2:not(:only-child, :last-child),
+h3:not(:only-child, :last-child),
+p:not(:only-child, :last-child) {
+  margin-bottom: 20px;
+}
+    /* --ELEMENTI STRUTTURALI-- */
 .container_1000 {
   max-width: 1000px;
   margin: 0 auto;
 }
+.container_1000::after {
+  content: '';
+  display: table;
+  clear: both;
+}
 
+.info_box {
+  margin: 40px 10px;
+  padding: 50px 30px 30px;
+}
+.info_box img{
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+}
+
+
+
+
+    /* -- ELEMENTI DECORATIVI COMUNI-- */
 .menu_inline {
   list-style: none;
 }
 .menu_inline > li {
   display: inline;
   text-transform: uppercase;
+  padding: 0 10px;
+}
+.menu_inline > li:first-child {
+  padding-left: 0;
+}
+.menu_inline > li:last-child {
+  padding-right: 0;
 }
 .menu_inline li a {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
+.grey {
+  background-color: #fafafa;
+}
+/* CSS SPECIFICI PER SEZIONE */
+
+/* --HEADER-- */
+
+.header-top {
+  width: 100%;
+  height: 8vh;
+  background-color: white;
+  vertical-align: middle;
+  font-size: 0.8em;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+header nav {
+  text-align: right; 
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+#menu_lang > li:not(:last-child){
+  border-right: 1px solid #212529;
+}
+
+#logo_header {
+  height: 0.9em;
+  vertical-align: middle;
+  margin-left: 0;
+}
+
+.jumbotron {
+  height: 80vh;
+  margin-top:8vh;
+  background-image: url('../img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.jumbo_text {
+  
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+    /* ---SEZ MONOPATTINI--- */
