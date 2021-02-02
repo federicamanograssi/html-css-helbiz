@@ -1,0 +1,22 @@
+/* --- COMMON --- */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+}
+
+.container_1000 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.menu_inline {
+  list-style: none;
+}
+.menu_inline > li {
+  display: inline;
+  text-transform: uppercase;
+}
+.menu_inline li a {
+  text-decoration: none;
+  color: black;
+}
